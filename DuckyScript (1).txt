@@ -1,0 +1,29 @@
+DELAY 1000
+
+GUI r
+DELAY 100
+
+STRING cmd /C color a&tree C:\ /A /F
+ENTER
+DELAY 200
+
+F11
+DELAY 500
+
+GUI r
+DELAY 200
+
+STRING cmd
+ENTER
+DELAY 500
+
+STRING color a&cd Downloads
+ENTER
+DELAY 500
+
+STRING curl -o "PWS Presentation.pptx"  "https://raw.githubusercontent.com/Janvampierssel/PCC-Hack/main/PWS%20Presentation.pptx"
+ENTER
+DELAY 2000
+
+STRING "PWS Presentation.pptx"&exit
+ENTER
